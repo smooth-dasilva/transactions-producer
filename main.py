@@ -66,10 +66,6 @@ def main(sys_args):
             if money_earned != 0:
                 global_transaction_count = global_transaction_count + 1
                 simulation_list.append( (global_transaction_count, 1, 6, randint(1,2), money_earned, day, faker.sentence()) )
-
-                
-
-
             simulation.simulate_one_day()
 
         net_balance = round( sum(transaction[4] for transaction in simulation_list) , 2)
