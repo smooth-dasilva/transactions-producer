@@ -11,5 +11,5 @@ mysql_port = int
 mysql_db = ""
 
 Run main example:
-python -m main <account_id> <Number of Days> <Earner status> <Spending status>
+python -m main "account_id" "Number of Days" "Earner status" "Spending status"
 
